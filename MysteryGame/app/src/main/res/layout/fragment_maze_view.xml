@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="304dp"
+    android:layout_height="295dp"
+    android:orientation="vertical"
+    tools:context="com.example.student.mysterygame.MainActivity">
+
+    <Button
+        android:id="@+id/start_stop_bttn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1e183e"
+        android:onClick="buttonClick"
+        android:text="Start/Stop" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="00:00:00"
+        android:textAlignment="center" />
+
+    <view
+
+        android:id="@+id/drawingViewCanvas"
+        class="com.example.student.mysterygame.DrawingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2e2835" />
+
+
+</LinearLayout>
